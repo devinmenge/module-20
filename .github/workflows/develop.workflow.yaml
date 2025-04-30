@@ -26,12 +26,12 @@ jobs:
 
       # Install dependencies
       - name: 🧰 Install Deps
-        run: npm install
+        run: cd develop && npm install
 
       # Run build
       - name: Run Build
-        run: npm run build
+        run: cd develop && npm run build
 
       # Run tests
       - name: Run Tests
-        run: npm run test
+        run: cd develop && npm run test
